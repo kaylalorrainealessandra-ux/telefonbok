@@ -18,3 +18,13 @@ def vis_alle():
 
 vis_alle()
 
+def legg_til(): 
+    nynavn = input("hva heter du?: ")
+    nynummer = input("hva er nummeret ditt?: ")
+    person3 = {
+        "navn": nynavn, 
+        "nummer": nynummer
+    }
+    telefonbok.append(person3)
+    print(f"{nynavn} ble lagt til i telefonboka!")
+legg_til()
