@@ -28,3 +28,13 @@ def legg_til():
     telefonbok.append(person3)
     print(f"{nynavn} ble lagt til i telefonboka!")
 legg_til()
+
+def søk():
+    søke = input("skrive inn et navn: ")
+    resultat = "person finnes ikke her"
+    for element in telefonbok: 
+        if søke.lower() == element["navn"].lower():
+            resultat = element["navn"] 
+    print(resultat)
+            
+søk()
