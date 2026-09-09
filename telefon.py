@@ -35,6 +35,29 @@ def søk():
     for element in telefonbok: 
         if søke.lower() == element["navn"].lower():
             resultat = element["navn"] 
-    print(resultat)
-            
+    print(f"{resultat} er i boka!")
 søk()
+
+while True: 
+    print(f" Meny av Telefonbok! ")
+    print(f"1. vis alle")
+    print(f"2. legg til ny")
+    print(f"3. søke")
+    print(f"4. avslutt")
+
+    valg = input(f"Velg alternativet ovenfor fra 1-4! : ")
+    valg = int(valg)
+
+    if valg == 1: 
+        vis_alle()
+    
+    elif valg == 2: 
+        legg_til()
+
+    elif valg == 3: 
+        søk()
+
+    elif valg == 4: 
+        print(f"vi ses da! bubye!")
+        break
+    
